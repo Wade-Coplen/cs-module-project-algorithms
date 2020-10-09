@@ -18,18 +18,19 @@ U-
 def single_number(arr):
     # Your code here
     sorted_list = list(sorted(arr))
+    print( sorted_list)
     #print(sorted_list)
     new_list = []
-    for i in range(0, len(sorted_list) - 1):
-        for j in sorted_list:
-            if sorted_list[i] == sorted_list[j]:
-                continue
-            else:
-                new_list.append(j)
-    print(new_list)
-       
-   
-            
+    
+    #for index in range(0, len(sorted_list) - 1):
+     #   if sorted_list[index] == sorted_list[index + 1]:
+      #      return 'equal'
+       # elif sorted_list[index] != sorted_list[index + 1]:
+        #    new_list.append([index])
+    #print(new_list)
+    return 2 * sum(set(arr)) - sum(arr)
+
+    print (int(singleNumber(arr)))       
            
     
         
