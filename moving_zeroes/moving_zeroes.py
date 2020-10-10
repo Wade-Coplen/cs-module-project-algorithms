@@ -21,6 +21,7 @@ Possibly a binary searching left -1 and right -1
     a. [0, 3]
     b. [1]
     c. [0, 2]
+    Two lists actually. 0 and not 0
 -or-
  iterate through the list. if anything is bigger than 0, append
  to its own list. 
@@ -32,7 +33,7 @@ def moving_zeroes(arr):
     # iterate over the list and divide length by floor 2
     # have to find a middle
     before = []
-    middle_index = (len(arr) -1) // 2
+    #middle_index = (len(arr) -1) // 2
     #print(middle_index)
     middle = []
     after = []
@@ -41,13 +42,12 @@ def moving_zeroes(arr):
         if i == 0:
             middle.append(i)
             #print(middle)
-        elif i is not 0:
+        elif i != 0:
             before.append(i)
            # print(before)
     for x in before:
         middle.append(x)
-    print(middle)
-            
+    print(middle) 
 
     # Your code here
 

@@ -17,10 +17,10 @@ U-
 '''
 def single_number(arr):
     # Your code here
-    sorted_list = list(sorted(arr))
-    print( sorted_list)
+    #sorted_list = list(sorted(arr))
+    #print( sorted_list)
     #print(sorted_list)
-    new_list = []
+    #new_list = []
     
     #for index in range(0, len(sorted_list) - 1):
      #   if sorted_list[index] == sorted_list[index + 1]:
